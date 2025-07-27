@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Vault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎬 Movie Vault</h1>
+
+  <div class="filters">
+    <button onclick="filterMovies('all')">All</button>
+    <button onclick="filterMovies('action')">Action</button>
+    <button onclick="filterMovies('drama')">Drama</button>
+    <button onclick="filterMovies('comedy')">Comedy</button>
+  </div>
+
+  <div class="gallery">
+    <div class="movie-card" data-category="action">
+      <img src="thumbnails/movie1.jpg" alt="Action Movie" />
+      <h3>Action Movie</h3>
+      <a href="player.html?video=movie1.mp4">▶ Watch</a>
+    </div>
+
+    <div class="movie-card" data-category="drama">
+      <img src="thumbnails/movie2.jpg" alt="Drama Movie" />
+      <h3>Drama Movie</h3>
+      <a href="player.html?video=movie2.mp4">▶ Watch</a>
+    </div>
+
+    <div class="movie-card" data-category="comedy">
+      <img src="thumbnails/movie3.jpg" alt="Comedy Movie" />
+      <h3>Funny Movie</h3>
+      <a href="player.html?video=movie3.mp4">▶ Watch</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
